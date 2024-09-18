@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "mythicalmetals:orichalcum_ingot"
+    },
+    "S": {
+      "item": "mythicalmetals:diamond_stick"
+    }
+  },
+  "pattern": [
+    "II",
+    "SI",
+    "S "
+  ],
+  "result": {
+    "item": "mythicalmetals:orichalcum_axe"
+  },
+  "show_notification": true
+}

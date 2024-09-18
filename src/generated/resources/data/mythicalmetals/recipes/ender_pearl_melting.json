@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1200,
+  "experience": 10.0,
+  "ingredient": {
+    "item": "minecraft:ender_pearl"
+  },
+  "result": "mythicalmetals:molten_pearl"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "mythicalmetals:infernite_hoe"
+    },
+    "I": {
+      "item": "mythicalmetals:infernite_ingot"
+    },
+    "S": {
+      "item": "mythicalmetals:diamond_stick"
+    }
+  },
+  "pattern": [
+    "II ",
+    " HI",
+    "S  "
+  ],
+  "result": {
+    "item": "mythicalmetals:infernite_scythe"
+  },
+  "show_notification": true
+}

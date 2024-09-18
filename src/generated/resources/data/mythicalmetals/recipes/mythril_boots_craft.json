@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "mythicalmetals:mythril_ingot"
+    }
+  },
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "result": {
+    "item": "mythicalmetals:mythril_boots"
+  },
+  "show_notification": true
+}

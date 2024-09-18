@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mythril_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mythicalmetals:mythril_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mythicalmetals:mythril_leggings_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mythril_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mythicalmetals:mythril_leggings_craft"
+    ]
+  },
+  "sends_telemetry_event": false
+}

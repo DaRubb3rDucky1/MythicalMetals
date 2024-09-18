@@ -1,0 +1,20 @@
+{
+  "values": [
+    "mythicalmetals:chronite_block",
+    "mythicalmetals:orichalcum_block",
+    "mythicalmetals:orichalcum_ore",
+    "mythicalmetals:deepslate_orichalcum_ore",
+    "mythicalmetals:raw_orichalcum_block",
+    "mythicalmetals:deepslate_mythril_ore",
+    "mythicalmetals:mythril_ore",
+    "mythicalmetals:raw_mythril_block",
+    "mythicalmetals:mythril_block",
+    "mythicalmetals:adamantium_block",
+    "mythicalmetals:infernite_block",
+    "mythicalmetals:raw_infernite_block",
+    "mythicalmetals:infernite_ore",
+    "mythicalmetals:azurite_block",
+    "mythicalmetals:raw_azurite_block",
+    "mythicalmetals:azurite_ore"
+  ]
+}
