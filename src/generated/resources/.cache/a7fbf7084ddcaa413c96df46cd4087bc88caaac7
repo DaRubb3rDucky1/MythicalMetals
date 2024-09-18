@@ -1,0 +1,7 @@
+// 1.20.1	2024-05-08T13:43:23.8495244	Tags for minecraft:block mod id mythicalmetals
+8c392689265a4bf8400fa3dde051fb710629ef62 data/forge/tags/blocks/needs_netherite_tool.json
+8572a27796dafde807bf703941a8b91aad52512c data/minecraft/tags/blocks/mineable/pickaxe.json
+093419615e9a8e35a795db9b3cffdf8e19e26df9 data/minecraft/tags/blocks/needs_diamond_tool.json
+b669a2a5c2b3864318e7cd306f5866854ad596f5 data/mythicalmetals/tags/blocks/needs_enderic_tool.json
+de16658ad651efd65acb4f2f764e0632a0c6c8f3 data/mythicalmetals/tags/blocks/needs_hellish_tool.json
+735b216190d34b4ac33c88199e57818cd7f7c5f6 data/mythicalmetals/tags/blocks/needs_magical_tool.json

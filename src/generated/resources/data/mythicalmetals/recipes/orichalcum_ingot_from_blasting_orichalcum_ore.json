@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "orichalcum",
+  "ingredient": {
+    "item": "mythicalmetals:orichalcum_ore"
+  },
+  "result": "mythicalmetals:orichalcum_ingot"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "mythicalmetals:azurite_hoe"
+    },
+    "I": {
+      "item": "mythicalmetals:azurite_ingot"
+    },
+    "S": {
+      "item": "mythicalmetals:diamond_stick"
+    }
+  },
+  "pattern": [
+    "II ",
+    " HI",
+    "S  "
+  ],
+  "result": {
+    "item": "mythicalmetals:azurite_scythe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "F": {
+      "item": "mythicalmetals:flash_frozen_powder"
+    },
+    "M": {
+      "item": "mythicalmetals:molten_pearl"
+    }
+  },
+  "pattern": [
+    "FMF",
+    "MEM",
+    "FMF"
+  ],
+  "result": {
+    "item": "mythicalmetals:glitched_eye"
+  },
+  "show_notification": true
+}

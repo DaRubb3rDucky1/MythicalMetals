@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_orichalcum_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mythicalmetals:deepslate_orichalcum_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mythicalmetals:orichalcum_ingot_from_smelting_deepslate_orichalcum_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_orichalcum_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mythicalmetals:orichalcum_ingot_from_smelting_deepslate_orichalcum_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

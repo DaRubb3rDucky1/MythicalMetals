@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "azurite",
+  "ingredient": {
+    "item": "mythicalmetals:raw_azurite"
+  },
+  "result": "mythicalmetals:azurite_ingot"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "mythicalmetals:infernite_ingot"
+    },
+    "S": {
+      "item": "mythicalmetals:diamond_stick"
+    }
+  },
+  "pattern": [
+    "I",
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "mythicalmetals:infernite_shovel"
+  },
+  "show_notification": true
+}

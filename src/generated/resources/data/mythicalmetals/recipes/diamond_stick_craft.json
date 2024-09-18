@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  D",
+    " S ",
+    "D  "
+  ],
+  "result": {
+    "item": "mythicalmetals:diamond_stick"
+  },
+  "show_notification": true
+}

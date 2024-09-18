@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "item": "mythicalmetals:mythril_hoe"
+    },
+    "I": {
+      "item": "mythicalmetals:mythril_ingot"
+    },
+    "S": {
+      "item": "mythicalmetals:diamond_stick"
+    }
+  },
+  "pattern": [
+    "II ",
+    " HI",
+    "S  "
+  ],
+  "result": {
+    "item": "mythicalmetals:mythril_scythe"
+  },
+  "show_notification": true
+}

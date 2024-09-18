@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mythicalmetals:chronite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mythicalmetals:chronite_ingot"
+  }
+}
