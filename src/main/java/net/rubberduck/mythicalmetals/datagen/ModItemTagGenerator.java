@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.rubberduck.mythicalmetals.MythicalMetals;
 import net.rubberduck.mythicalmetals.item.ModItems;
@@ -46,5 +47,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.AZURITE_LEGGINGS.get(),
                         ModItems.AZURITE_BOOTS.get()
                 );
+        this.tag(Tags.Items.INGOTS).add(
+                ModItems.ORICHALCUM_INGOT.get(),
+                ModItems.MYTHRIL_INGOT.get(),
+                ModItems.ADAMANTIUM_INGOT.get(),
+                ModItems.INFERNITE_INGOT.get(),
+                ModItems.AZURITE_INGOT.get(),
+                ModItems.CHRONITE_INGOT.get()
+        );
     }
 }

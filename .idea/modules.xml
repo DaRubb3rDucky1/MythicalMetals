@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MythicalMetals.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MythicalMetals.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MythicalMetals.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MythicalMetals.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.rubberduck.mythicalmetals.MythicalMetals.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.rubberduck.mythicalmetals.MythicalMetals.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.rubberduck.mythicalmetals.MythicalMetals.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.rubberduck.mythicalmetals.MythicalMetals.test.iml" />
     </modules>
   </component>
 </project>

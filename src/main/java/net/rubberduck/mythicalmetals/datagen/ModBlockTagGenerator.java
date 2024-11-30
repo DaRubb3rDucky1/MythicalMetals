@@ -23,6 +23,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(Tags.Blocks.ORES).add(
+                ModBlocks.ORICHALCUM_ORE.get(),
+                ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get(),
+                ModBlocks.DEEPSLATE_MYTHRIL_ORE.get(),
+                ModBlocks.INFERNITE_ORE.get(),
+                ModBlocks.AZURITE_ORE.get()
+        );
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 ModBlocks.CHRONITE_BLOCK.get(),
                 ModBlocks.ORICHALCUM_BLOCK.get(),
@@ -41,6 +49,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.RAW_AZURITE_BLOCK.get(),
                 ModBlocks.AZURITE_ORE.get()
         );
+
+        this.tag(ModTags.Blocks.NEEDS_MYTHIC_TOOL).addTag(
+                ModTags.Blocks.NEEDS_MAGICAL_TOOL
+        );
+        this.tag(ModTags.Blocks.NEEDS_ADAMANITE_TOOL).addTag(
+                ModTags.Blocks.NEEDS_MAGICAL_TOOL
+        );
+        this.tag(ModTags.Blocks.NEEDS_TEMPORAL_TOOL).addTag(
+                ModTags.Blocks.NEEDS_MAGICAL_TOOL
+        );
+
         this.tag(ModTags.Blocks.NEEDS_MAGICAL_TOOL).add(
                 ModBlocks.CHRONITE_BLOCK.get(),
                 ModBlocks.ADAMANTIUM_BLOCK.get(),
@@ -61,6 +80,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.MYTHRIL_ORE.get(),
                 ModBlocks.RAW_MYTHRIL_BLOCK.get()
         );
+
+        this.tag(ModTags.Blocks.NEEDS_DIMENSIONAL_TOOL).addTag(ModTags.Blocks.NEEDS_HELLISH_TOOL).addTag(ModTags.Blocks.NEEDS_ENDERIC_TOOL);
 
         this.tag(ModTags.Blocks.NEEDS_HELLISH_TOOL).add(
                 ModBlocks.INFERNITE_BLOCK.get(),
