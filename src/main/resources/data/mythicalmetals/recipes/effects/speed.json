@@ -1,0 +1,12 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":  "minecraft:speed",
+  "providers": [
+    {
+      "tag": "mythicalmetals:armor/mythril"
+    },
+    {
+      "tag": "mythicalmetals:armor/chronite"
+    }
+  ]
+}

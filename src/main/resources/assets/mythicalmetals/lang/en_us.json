@@ -1,5 +1,8 @@
 {
   "creativetab.mythicalmetals": "Mythical Metals",
+  "death.attack.fracturing": "%s was ripped apart through space and time",
+  "death.attack.fracturing.item": "%s was ripped apart through space and time by %s using %s",
+  "death.attack.fracturing.player": "%s was ripped apart through space and time whilst trying to escape %s",
 
   "item.mythicalmetals.diamond_stick": "Diamond Stick",
   "item.mythicalmetals.flash_frozen_powder": "Flash Frozen Powder",
@@ -7,7 +10,7 @@
   "item.mythicalmetals.glitched_eye": "Glitched Eye",
 
   "effect.mythicalmetals.void_walker": "Void Walker",
-  "effect.mythicalmetals.fractured": "§kDimensional Instability",
+  "effect.mythicalmetals.fractured": "§kTemporal-Dimensional Instability",
   "item.minecraft.potion.effect.fractured_potion": "Unstable Mixture",
   "item.minecraft.splash_potion.effect.fractured_potion": "Splashable Instability",
   "item.minecraft.lingering_potion.effect.fractured_potion": "Lingering Instability",
@@ -116,5 +119,9 @@
   "block.mythicalmetals.infernite_ore": "Infernite Ore",
   "block.mythicalmetals.raw_azurite_block": "Block of Raw Azurite",
   "block.mythicalmetals.azurite_block": "Block of Azurite",
-  "block.mythicalmetals.azurite_ore": "Azurite Ore"
+  "block.mythicalmetals.azurite_ore": "Azurite Ore",
+
+  "recipe.mythicalmetals.temporal_trading": "Temporal Trading",
+  "effect.mythicalmetals.fractured.description": "Fractures entities through time and space, reducing health and increasing the chance to dodge damage. Also allows players to trade objects with their past/future selves",
+  "effect.mythicalmetals.void_walker.description": "Allows affected entities to walk on air over the void"
 }

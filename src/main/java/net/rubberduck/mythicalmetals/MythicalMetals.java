@@ -19,15 +19,20 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.NamedEventListener;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rubberduck.mythicalmetals.block.ModBlocks;
+import net.rubberduck.mythicalmetals.config.MythicalClientConfig;
+import net.rubberduck.mythicalmetals.config.MythicalCommonConfig;
 import net.rubberduck.mythicalmetals.effects.ModEffects;
 import net.rubberduck.mythicalmetals.item.ModCreativeModTabs;
 import net.rubberduck.mythicalmetals.item.ModItems;
 import net.rubberduck.mythicalmetals.potion.ModPotions;
+import net.rubberduck.mythicalmetals.recipe.ModRecipes;
 import net.rubberduck.mythicalmetals.util.BetterBrewingRecipe;
 import net.rubberduck.mythicalmetals.util.CropRightclickHarvest;
 import org.slf4j.Logger;
@@ -55,10 +60,17 @@ public class MythicalMetals {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
 
+
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::setup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MythicalClientConfig.SPEC,  "mythical_metals/"+ MODID + "-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MythicalCommonConfig.SPEC, "mythical_metals/" + MODID + "-common.toml");
+
+        ModRecipes.register(modEventBus);
+        // Call with MythicalCommonConfig.<>
     }
     @SubscribeEvent
     public void commonSetup(final FMLCommonSetupEvent event) {

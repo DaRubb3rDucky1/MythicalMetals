@@ -1,0 +1,8 @@
+{
+  "type": "mythicalmetals:temporal_trading",
+  "input": {
+    "tag": "forge:storage_blocks/iron"
+  },
+  "output": "mythicalmetals:chronite_ingot",
+  "count": 1
+}

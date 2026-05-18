@@ -11,7 +11,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.rubberduck.mythicalmetals.config.MythicalCommonConfig;
+import net.rubberduck.mythicalmetals.damage.ModDamageSource;
 import net.rubberduck.mythicalmetals.item.ModItems;
+import net.rubberduck.mythicalmetals.util.DimensionalTrading;
+import org.joml.Random;
 
 public class FracturedEffect extends MobEffect {
     protected FracturedEffect(MobEffectCategory pCategory, int pColor) {
@@ -21,22 +25,20 @@ public class FracturedEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity entity, int amp) {
         Level level = entity.level();
-        InteractionHand hand = entity.getUsedItemHand();
-        Item chronite = ModItems.CHRONITE_INGOT.get();
-        ItemStack itemStack = new ItemStack(chronite, 1);
+
+        DimensionalTrading.temporalEffectTrading(level, entity);
+
+        double multi = MythicalCommonConfig.FRACTURED_MULTIPLIER.get();
+        multi = Math.min(multi, 0.9);
+        multi = Math.max(multi, 0);
+        multi = 1 - multi;
+
         if (!entity.level().isClientSide()) {
-            if (entity.getHealth() > (entity.getMaxHealth() / 2)) {
-                entity.hurt(entity.damageSources().magic(), 1);
+            if (entity.getHealth() > (entity.getMaxHealth() * multi)) {
+                entity.hurt(ModDamageSource.fracturing(level), 1);
             }
-            if (entity.isHolding(Items.IRON_BLOCK)) {
-                if (entity instanceof Player) {
-                    Player player = ((Player) entity);
-                    player.getInventory().placeItemBackInInventory(itemStack);
-                    if(!player.getAbilities().instabuild) {
-                        player.getItemInHand(hand).shrink(1);
-                    }
-                }
-            }
+
+
         }
     }
 

@@ -19,7 +19,7 @@ public class ModToolTiers {
     //dont need to go to nether, less durabilty, slower attack speed, higher damage, much higher defense
     public static final Tier ORICHALCUM = TierSortingRegistry.registerTier(
             new ForgeTier(4, 1578, 9.0F, 4.0F, 15,
-                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.CHRONITE_INGOT.get())),
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.ORICHALCUM_INGOT.get())),
             new ResourceLocation(MythicalMetals.MODID, "orichalcum"), List.of(Tiers.NETHERITE), List.of());
     //stronk and speed
     //slightly higher attack damage, much higher durability, much higher speed, less defense as netherite
@@ -30,25 +30,25 @@ public class ModToolTiers {
     //adamantium
     //nothing for now
     public static final Tier ADAMANTIUM = TierSortingRegistry.registerTier(
-            new ForgeTier(5, 3760, 10f, 8f, 22,
+            new ForgeTier(6, 3760, 10f, 8f, 22,
                     ModTags.Blocks.NEEDS_ADAMANITE_TOOL, () -> Ingredient.of(ModItems.ADAMANTIUM_INGOT.get())),
-            new ResourceLocation(MythicalMetals.MODID, "adamantium"), List.of(ModToolTiers.ORICHALCUM), List.of());
+            new ResourceLocation(MythicalMetals.MODID, "adamantium"), List.of(ModToolTiers.MYTHRIL), List.of());
     //much stronk
     //higher attack damage, higher durability, higher speed, higher defense than netherite
     public static final Tier CHRONITE = TierSortingRegistry.registerTier(
-            new ForgeTier(5, 3760, 10f, 8.0f, 28,
+            new ForgeTier(7, 3760, 10f, 8.0f, 28,
                 ModTags.Blocks.NEEDS_TEMPORAL_TOOL, () -> Ingredient.of(ModItems.CHRONITE_INGOT.get())),
-            new ResourceLocation(MythicalMetals.MODID, "chronite"), List.of(ModToolTiers.ORICHALCUM), List.of());
+            new ResourceLocation(MythicalMetals.MODID, "chronite"), List.of(ModToolTiers.ADAMANTIUM), List.of());
     //infernite
     //nothing for now
     public static final Tier INFERNITE = TierSortingRegistry.registerTier(
-            new ForgeTier(6, 7645, 25f, 2.7f, 32,
+            new ForgeTier(8, 7645, 25f, 2.7f, 32,
                     ModTags.Blocks.NEEDS_HELLISH_TOOL, () -> Ingredient.of(ModItems.INFERNITE_INGOT.get())),
-            new ResourceLocation(MythicalMetals.MODID, "infernite"), List.of(ModToolTiers.CHRONITE, ModToolTiers.ADAMANTIUM, ModToolTiers.MYTHRIL), List.of());
+            new ResourceLocation(MythicalMetals.MODID, "infernite"), List.of(ModToolTiers.CHRONITE), List.of());
     //azurite
     //nothing for now
     public static final Tier AZURITE = TierSortingRegistry.registerTier(
-            new ForgeTier(7, 7645, 25f, 2.7f, 32,
+            new ForgeTier(9, 7645, 25f, 2.7f, 32,
                     ModTags.Blocks.NEEDS_ENDERIC_TOOL, () -> Ingredient.of(ModItems.AZURITE_INGOT.get())),
             new ResourceLocation(MythicalMetals.MODID, "azurite"), List.of(ModToolTiers.INFERNITE), List.of());
 

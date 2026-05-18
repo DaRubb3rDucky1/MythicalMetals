@@ -9,6 +9,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.rubberduck.mythicalmetals.config.MythicalCommonConfig;
 import net.rubberduck.mythicalmetals.effects.ModEffects;
 
 import java.util.Map;
@@ -36,7 +37,7 @@ public class ModArmorItem extends ArmorItem {
     @SuppressWarnings("removal")
     @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
-        if(!world.isClientSide()) {
+        if((!world.isClientSide()) && (MythicalCommonConfig.ARMOR_EFFECTS.get())) {
             if(hasFullSuitOfArmorOn(player)) {
                 evaluateArmorEffects(player);
             }

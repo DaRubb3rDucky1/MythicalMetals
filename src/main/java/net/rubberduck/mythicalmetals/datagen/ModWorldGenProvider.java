@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.rubberduck.mythicalmetals.MythicalMetals;
+import net.rubberduck.mythicalmetals.damage.ModDamageSource;
 import net.rubberduck.mythicalmetals.worldgen.ModBiomeModifiers;
 import net.rubberduck.mythicalmetals.worldgen.ModConfiguredFeatures;
 import net.rubberduck.mythicalmetals.worldgen.ModPlacedFeatures;
@@ -18,7 +19,9 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+
+            .add(Registries.DAMAGE_TYPE, ModDamageSource::bootstrap);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(MythicalMetals.MODID));

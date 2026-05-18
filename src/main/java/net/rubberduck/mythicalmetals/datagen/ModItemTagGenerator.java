@@ -9,6 +9,7 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.rubberduck.mythicalmetals.MythicalMetals;
 import net.rubberduck.mythicalmetals.item.ModItems;
+import net.rubberduck.mythicalmetals.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -54,6 +55,43 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.INFERNITE_INGOT.get(),
                 ModItems.AZURITE_INGOT.get(),
                 ModItems.CHRONITE_INGOT.get()
+        );
+        this.tag(ModTags.Items.ORICHALCUM_ARMOR).add(
+                ModItems.ORICHALCUM_HELMET.get(),
+                ModItems.ORICHALCUM_CHESTPLATE.get(),
+                ModItems.ORICHALCUM_LEGGINGS.get(),
+                ModItems.ORICHALCUM_BOOTS.get()
+        );
+        this.tag(ModTags.Items.MYTHRIL_ARMOR).add(
+                ModItems.MYTHRIL_HELMET.get(),
+                ModItems.MYTHRIL_CHESTPLATE.get(),
+                ModItems.MYTHRIL_LEGGINGS.get(),
+                ModItems.MYTHRIL_BOOTS.get()
+        );
+        this.tag(ModTags.Items.CHRONITE_ARMOR).add(
+                ModItems.CHRONITE_HELMET.get(),
+                ModItems.CHRONITE_CHESTPLATE.get(),
+                ModItems.CHRONITE_LEGGINGS.get(),
+                ModItems.CHRONITE_BOOTS.get()
+
+        );
+        this.tag(ModTags.Items.ADAMANTIUM_ARMOR).add(
+                ModItems.ADAMANTIUM_HELMET.get(),
+                ModItems.ADAMANTIUM_CHESTPLATE.get(),
+                ModItems.ADAMANTIUM_LEGGINGS.get(),
+                ModItems.ADAMANTIUM_BOOTS.get()
+        );
+        this.tag(ModTags.Items.INFERNITE_ARMOR).add(
+                ModItems.INFERNITE_HELMET.get(),
+                ModItems.INFERNITE_CHESTPLATE.get(),
+                ModItems.INFERNITE_LEGGINGS.get(),
+                ModItems.INFERNITE_BOOTS.get()
+        );
+        this.tag(ModTags.Items.AZURITE_ARMOR).add(
+                ModItems.AZURITE_HELMET.get(),
+                ModItems.AZURITE_CHESTPLATE.get(),
+                ModItems.AZURITE_LEGGINGS.get(),
+                ModItems.AZURITE_BOOTS.get()
         );
     }
 }

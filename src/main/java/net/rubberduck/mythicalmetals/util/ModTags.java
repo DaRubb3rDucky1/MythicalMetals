@@ -24,6 +24,13 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> MAGICAL_METAL = tag("magical_metal");
         public static final TagKey<Item> SCYTHE = tag("scythe");
+
+        public static final TagKey<Item> ORICHALCUM_ARMOR = tag("armor/orichalcum");
+        public static final TagKey<Item> MYTHRIL_ARMOR = tag("armor/mythril");
+        public static final TagKey<Item> ADAMANTIUM_ARMOR = tag("armor/adamantium");
+        public static final TagKey<Item> CHRONITE_ARMOR = tag("armor/chronite");
+        public static final TagKey<Item> INFERNITE_ARMOR = tag("armor/infernite");
+        public static final TagKey<Item> AZURITE_ARMOR = tag("armor/azurite");
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(MythicalMetals.MODID, name));
         }

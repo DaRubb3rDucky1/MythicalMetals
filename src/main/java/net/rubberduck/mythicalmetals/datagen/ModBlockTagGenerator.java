@@ -50,17 +50,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.AZURITE_ORE.get()
         );
 
-        this.tag(ModTags.Blocks.NEEDS_MYTHIC_TOOL).addTag(
-                ModTags.Blocks.NEEDS_MAGICAL_TOOL
-        );
-        this.tag(ModTags.Blocks.NEEDS_ADAMANITE_TOOL).addTag(
-                ModTags.Blocks.NEEDS_MAGICAL_TOOL
-        );
-        this.tag(ModTags.Blocks.NEEDS_TEMPORAL_TOOL).addTag(
-                ModTags.Blocks.NEEDS_MAGICAL_TOOL
-        );
-
-        this.tag(ModTags.Blocks.NEEDS_MAGICAL_TOOL).add(
+        this.tag(ModTags.Blocks.NEEDS_MYTHIC_TOOL).add(
                 ModBlocks.CHRONITE_BLOCK.get(),
                 ModBlocks.ADAMANTIUM_BLOCK.get(),
                 ModBlocks.INFERNITE_ORE.get(),

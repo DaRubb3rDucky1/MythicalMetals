@@ -1,0 +1,12 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":  "minecraft:resistance",
+  "providers": [
+    {
+      "tag": "mythicalmetals:armor/orichalcum"
+    },
+    {
+      "tag": "mythicalmetals:armor/adamantium"
+    }
+  ]
+}

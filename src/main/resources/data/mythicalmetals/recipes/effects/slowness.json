@@ -1,0 +1,9 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":  "minecraft:slowness",
+  "providers": [
+    {
+      "tag": "mythicalmetals:armor/orichalcum"
+    }
+  ]
+}
