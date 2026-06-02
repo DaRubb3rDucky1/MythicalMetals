@@ -81,6 +81,48 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NEEDS_ENDERIC_TOOL).add(
                 ModBlocks.AZURITE_BLOCK.get()
         );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK).add(
+                ModBlocks.RAW_ORICHALCUM_BLOCK.get(),
+                ModBlocks.ORICHALCUM_BLOCK.get(),
+                ModBlocks.RAW_MYTHRIL_BLOCK.get(),
+                ModBlocks.MYTHRIL_BLOCK.get(),
+                ModBlocks.ADAMANTIUM_BLOCK.get(),
+                ModBlocks.CHRONITE_BLOCK.get(),
+                ModBlocks.RAW_INFERNITE_BLOCK.get(),
+                ModBlocks.INFERNITE_BLOCK.get(),
+                ModBlocks.RAW_AZURITE_BLOCK.get(),
+                ModBlocks.AZURITE_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_ORICHALCUM).add(
+                ModBlocks.ORICHALCUM_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_RAW_ORICHALCUM).add(
+                ModBlocks.ORICHALCUM_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_MYTHRIL).add(
+                ModBlocks.RAW_MYTHRIL_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_RAW_MYTHRIL).add(
+                ModBlocks.RAW_MYTHRIL_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_ADAMANTIUM).add(
+                ModBlocks.ADAMANTIUM_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_INFERNITE).add(
+                ModBlocks.INFERNITE_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_RAW_INFERNITE).add(
+                ModBlocks.RAW_INFERNITE_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_AZURITE).add(
+                ModBlocks.AZURITE_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_RAW_AZURITE).add(
+                ModBlocks.RAW_AZURITE_BLOCK.get()
+        );
+        this.tag(ModTags.Blocks.STORAGE_BLOCK_CHRONITE).add(
+                ModBlocks.CHRONITE_BLOCK.get()
+        );
     }
 
 

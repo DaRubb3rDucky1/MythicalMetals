@@ -87,6 +87,7 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            jvmArg "-Dmixin.env.disableRefMap=true"
         }
 
         server {
@@ -107,6 +108,7 @@ minecraft {
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            jvmArg "-Dmixin.env.disableRefMap=true"
         }
     }
 }
@@ -128,6 +130,17 @@ repositories {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+    maven {
+        name = "CurseMaven"
+        url = "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
@@ -146,10 +159,14 @@ dependencies {
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
+    // jade_version example: 15.10.0+neoforge
+    // Visit https://modrinth.com/mod/jade/versions?l=neoforge to get the latest version
+    // implementation "maven.modrinth:jade:${jade_version}"
+    compileOnly(fg.deobf("maven.modrinth:jade:${jade_version}"))
+//    runtimeOnly(fg.deobf("maven.modrinth:jade:${jade_version}"))
+//    implementation fg.deobf("maven.modrinth:jade:${project.jade_version}")
+    compileOnly(fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:${jeed_version}"))
+    runtimeOnly fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:${jeed_version}")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

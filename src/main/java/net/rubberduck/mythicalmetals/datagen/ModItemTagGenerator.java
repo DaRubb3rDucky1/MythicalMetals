@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.rubberduck.mythicalmetals.MythicalMetals;
+import net.rubberduck.mythicalmetals.block.ModBlocks;
 import net.rubberduck.mythicalmetals.item.ModItems;
 import net.rubberduck.mythicalmetals.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -92,6 +93,67 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.AZURITE_CHESTPLATE.get(),
                 ModItems.AZURITE_LEGGINGS.get(),
                 ModItems.AZURITE_BOOTS.get()
+        );
+        this.tag(ModTags.Items.ORICHALCUM_INGOT).add(
+                ModItems.ORICHALCUM_INGOT.get()
+        );
+        this.tag(ModTags.Items.MYTHRIL_INGOT).add(
+                ModItems.MYTHRIL_INGOT.get()
+        );
+        this.tag(ModTags.Items.ADAMANTIUM_INGOT).add(
+                ModItems.ADAMANTIUM_INGOT.get()
+        );
+        this.tag(ModTags.Items.INFERNITE_INGOT).add(
+                ModItems.INFERNITE_INGOT.get()
+        );
+        this.tag(ModTags.Items.AZURITE_INGOT).add(
+                ModItems.AZURITE_INGOT.get()
+        );
+        this.tag(ModTags.Items.CHRONITE_INGOT).add(
+                ModItems.CHRONITE_INGOT.get()
+        );
+
+        this.tag(ModTags.Items.STORAGE_BLOCK).add(
+                ModBlocks.RAW_ORICHALCUM_BLOCK.get().asItem(),
+                ModBlocks.ORICHALCUM_BLOCK.get().asItem(),
+                ModBlocks.RAW_MYTHRIL_BLOCK.get().asItem(),
+                ModBlocks.MYTHRIL_BLOCK.get().asItem(),
+                ModBlocks.ADAMANTIUM_BLOCK.get().asItem(),
+                ModBlocks.CHRONITE_BLOCK.get().asItem(),
+                ModBlocks.RAW_INFERNITE_BLOCK.get().asItem(),
+                ModBlocks.INFERNITE_BLOCK.get().asItem(),
+                ModBlocks.RAW_AZURITE_BLOCK.get().asItem(),
+                ModBlocks.AZURITE_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_ORICHALCUM).add(
+                ModBlocks.ORICHALCUM_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_RAW_ORICHALCUM).add(
+                ModBlocks.ORICHALCUM_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_MYTHRIL).add(
+                ModBlocks.RAW_MYTHRIL_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_RAW_MYTHRIL).add(
+                ModBlocks.RAW_MYTHRIL_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_ADAMANTIUM).add(
+                ModBlocks.ADAMANTIUM_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_INFERNITE).add(
+                ModBlocks.INFERNITE_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_RAW_INFERNITE).add(
+                ModBlocks.RAW_INFERNITE_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_AZURITE).add(
+                ModBlocks.AZURITE_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_RAW_AZURITE).add(
+                ModBlocks.RAW_AZURITE_BLOCK.get().asItem()
+        );
+        this.tag(ModTags.Items.STORAGE_BLOCK_CHRONITE).add(
+                ModBlocks.CHRONITE_BLOCK.get().asItem()
         );
     }
 }
