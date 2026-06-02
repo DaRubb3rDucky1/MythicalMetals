@@ -48,7 +48,7 @@ public class ModTags {
         public static final TagKey<Item> INFERNITE_ARMOR = tag("armor/infernite");
         public static final TagKey<Item> AZURITE_ARMOR = tag("armor/azurite");
 
-        public static final TagKey<Item> ORICHALCUM_INGOT = forgeTag("ingots/orchicalcum");
+        public static final TagKey<Item> ORICHALCUM_INGOT = forgeTag("ingots/orichalcum");
         public static final TagKey<Item> MYTHRIL_INGOT = forgeTag("ingots/mythril");
         public static final TagKey<Item> ADAMANTIUM_INGOT = forgeTag("ingots/adamantium");
         public static final TagKey<Item> INFERNITE_INGOT = forgeTag("ingots/infernite");
